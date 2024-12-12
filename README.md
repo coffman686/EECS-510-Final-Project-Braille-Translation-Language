@@ -20,7 +20,7 @@ Our broader goal is to promote empathy and communication with the visually impai
 - **Alphabet:** Covers the 26 letters of the English alphabet (no symbols or numbers for this version).
 - **Machine Process:** The machine reads 6-bit binary input and matches it to a dictionary of characters. If the input is invalid or doesn’t match, the machine rejects it.
 - **Smallest Valid Input:** The empty string (`λ`) doesn’t trigger the machine’s processing.
-- **Visualization:** To visualize the language, visit the [AutomataAndTesting] directory and check out our diagram. A comprehensive DFA diagram of our machine is available.
+- **Visualization:** To visualize the language, visit the [AutomataAndTesting](AutomataAndTesting/) directory and check out our diagram. A comprehensive DFA diagram of our machine is available.
 
 ### Key Features:
 - **Input Format:** Braille as 6-bit binary strings (1s and 0s).
@@ -50,7 +50,7 @@ applications that improve accessibility.
 - The DFA can be tested by printing the output of the accept function in driver.py.
 - There is an example in line 109 of driver.py that can be altered to test different inputs.
 - Outputting line example: print(accept(a, "100000"))
-- To run the test cases yourself, ensure that you have all files from the [DataStructure] folder downloaded, and are in a Python environment.
+- To run the test cases yourself, ensure that you have all files from the [DataStructure](DataStructure/) folder downloaded, and are in a Python environment.
 
 Examples:    
 ```
