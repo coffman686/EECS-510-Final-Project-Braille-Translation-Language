@@ -3,8 +3,8 @@
 Our group created a language to help the visually unimpaired learn Braille using a simple machine. The goal is to translate Braille into a 3x2 grid of 6 dots (1s and 0s), which can then 
 be read by our machine to identify the corresponding character.
 
-This is simply a brief synapsis of our language, and a lesson in how to use our machine and language at a technical level. For a more in depth description of our langauge's intent, purpose, 
-and structure, please see the [Language Summary](language_summary.md).
+This is simply a brief synopsis of our language and a lesson in how to use our machine and language at a technical level. For a more in-depth description of our language's intent, purpose, 
+and structure, please see the [Language Summary](Documentation/language_summary.md).
 
 ## Purpose and Intent
 
@@ -20,6 +20,7 @@ Our broader goal is to promote empathy and communication with the visually impai
 - **Alphabet:** Covers the 26 letters of the English alphabet (no symbols or numbers for this version).
 - **Machine Process:** The machine reads 6-bit binary input and matches it to a dictionary of characters. If the input is invalid or doesn’t match, the machine rejects it.
 - **Smallest Valid Input:** The empty string (`λ`) doesn’t trigger the machine’s processing.
+- **Visualization:** To visualize the language, visit the [AutomataAndTesting] directory and check out our diagram. A comprehensive DFA diagram of our machine is available.
 
 ### Key Features:
 - **Input Format:** Braille as 6-bit binary strings (1s and 0s).
@@ -36,7 +37,6 @@ Our broader goal is to promote empathy and communication with the visually impai
 - While similar ideas exist, our focus is on making learning Braille accessible and engaging for the sighted, rather than just providing a tool.
 
 ## Overall:
-
 Our project is more than a machine—it’s a step toward fostering empathy, understanding, and communication between the sighted and the visually impaired. This language can lay the foundation for future 
 applications that improve accessibility.
 
@@ -50,6 +50,7 @@ applications that improve accessibility.
 - The DFA can be tested by printing the output of the accept function in driver.py.
 - There is an example in line 109 of driver.py that can be altered to test different inputs.
 - Outputting line example: print(accept(a, "100000"))
+- To run the test cases yourself, ensure that you have all files from the [DataStructure] folder downloaded, and are in a Python environment.
 
 Examples:    
 ```
