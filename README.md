@@ -3,6 +3,9 @@
 Our group created a language to help the visually unimpaired learn Braille using a simple machine. The goal is to translate Braille into a 3x2 grid of 6 dots (1s and 0s), which can then 
 be read by our machine to identify the corresponding character.
 
+This is simply a brief synapsis of our language, and a lesson in how to use our machine and language at a technical level. For a more in depth description of our langauge's intent, purpose, 
+and structure, please see the [Language Summary](language_summary.md).
+
 ## Purpose and Intent
 
 We aim to:
