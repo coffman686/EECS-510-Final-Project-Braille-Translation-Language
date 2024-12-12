@@ -37,6 +37,58 @@ Our broader goal is to promote empathy and communication with the visually impai
 Our project is more than a machine—it’s a step toward fostering empathy, understanding, and communication between the sighted and the visually impaired. This language can lay the foundation for future 
 applications that improve accessibility.
 
-## Using the machine's Code
+## Using the Machine's Code
+- The program requires three files to operate.
+- **driver.py:** The main file that imports the other two files, creates and defines the DFA, and tests input strings on the machine. The output of the machine comes from the print(accept(a, w)) statement.
+- **test.py:** Holds the accept() function which is used to test the DFA by validating inputs, breaking the input into 6-bit chunks, and traversing the DFA until it is found to be invalid (rejects) or valid (accepts with a list of transitions).
+- **data_structure.py:** Holds the data structure, A, as a Python class for our DFA.
 
 ## Running the Test Cases
+- The DFA can be tested by printing the output of the accept function in driver.py.
+- There is an example in line 109 of driver.py that can be altered to test different inputs.
+- Outputting line example: print(accept(a, "100000"))
+
+Examples:
+Input: "100000101000110000" (a=100000, b=101000, c=110000)
+Output:
+accept
+q0 1 q1
+q1 0 q2
+q2 0 q3
+q3 0 q4
+q4 0 q5
+q5 0 q6
+q6 a q0
+q0 1 q1
+q1 0 q2
+q2 1 q7
+q7 0 q8
+q8 0 q9
+q9 0 q10
+q10 b q0
+q0 1 q1
+q1 1 q11
+q11 0 q12
+q12 0 q13
+q13 0 q14
+q14 0 q15
+q15 c q0
+
+Input: "011101" (w=011101)
+Output:
+accept
+q0 0 q32
+q32 1 q33
+q33 1 q34
+q34 1 q38
+q38 0 q39
+q39 1 q63
+q63 w q0
+
+Input: "1100" (Invalid, too short)
+Output:
+reject
+
+Input: "100000111111" (a=100000, 111111 is invalid) (Invalid, 111111 not reachable through DFA and therefore not a letter)
+Output:
+reject
