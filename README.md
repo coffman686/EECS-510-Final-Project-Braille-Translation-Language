@@ -6,6 +6,8 @@ be read by our machine to identify the corresponding character.
 This is simply a brief synopsis of our language and a lesson in how to use our machine and language at a technical level. For a more in-depth description of our language's intent, purpose, 
 and structure, please see the [Language Summary](Documentation/language_summary.md).
 
+The requirements of the EECS 510 final project are fulfilled in this repository, and you can access them through the various folders. For part 1, refer to the above summary. For parts 2 and 3, refer to [AutomataAndTesting](AutomataAndTesting/). For parts 4 and 5, check out [DataStructure](DataStructure/). These are linked below with instructions on when you might want to use them, but this is for those not grading. These links are only provided for the convenience of the grader/professor. Thanks for grading!
+
 ## Purpose and Intent
 
 We aim to:
