@@ -48,47 +48,49 @@ applications that improve accessibility.
 - There is an example in line 109 of driver.py that can be altered to test different inputs.
 - Outputting line example: print(accept(a, "100000"))
 
-Examples:
-Input: "100000101000110000" (a=100000, b=101000, c=110000)
-Output:
-accept
-q0 1 q1
-q1 0 q2
-q2 0 q3
-q3 0 q4
-q4 0 q5
-q5 0 q6
-q6 a q0
-q0 1 q1
-q1 0 q2
-q2 1 q7
-q7 0 q8
-q8 0 q9
-q9 0 q10
-q10 b q0
-q0 1 q1
-q1 1 q11
-q11 0 q12
-q12 0 q13
-q13 0 q14
-q14 0 q15
-q15 c q0
+Examples:    
+```
+Input: "100000101000110000" (a=100000, b=101000, c=110000)    
+Output:    
+accept    
+q0 1 q1    
+q1 0 q2    
+q2 0 q3    
+q3 0 q4    
+q4 0 q5    
+q5 0 q6    
+q6 a q0    
+q0 1 q1    
+q1 0 q2    
+q2 1 q7    
+q7 0 q8    
+q8 0 q9    
+q9 0 q10    
+q10 b q0    
+q0 1 q1    
+q1 1 q11    
+q11 0 q12    
+q12 0 q13    
+q13 0 q14    
+q14 0 q15    
+q15 c q0    
 
-Input: "011101" (w=011101)
-Output:
-accept
-q0 0 q32
-q32 1 q33
-q33 1 q34
-q34 1 q38
-q38 0 q39
-q39 1 q63
-q63 w q0
+Input: "011101" (w=011101)    
+Output:    
+accept    
+q0 0 q32    
+q32 1 q33    
+q33 1 q34    
+q34 1 q38    
+q38 0 q39    
+q39 1 q63    
+q63 w q0    
 
-Input: "1100" (Invalid, too short)
-Output:
-reject
+Input: "1100" (Invalid, too short)    
+Output:    
+reject    
 
-Input: "100000111111" (a=100000, 111111 is invalid) (Invalid, 111111 not reachable through DFA and therefore not a letter)
-Output:
-reject
+Input: "100000111111" (a=100000, 111111 is invalid) (Invalid, 111111 not reachable through DFA and therefore not a letter)    
+Output:    
+reject    
+```
