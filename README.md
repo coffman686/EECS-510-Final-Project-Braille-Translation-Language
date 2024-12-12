@@ -1,0 +1,42 @@
+# The Intent, Structure, and Purpose of Our Language
+
+Our group created a language to help the visually unimpaired learn Braille using a simple machine. The goal is to translate Braille into a 3x2 grid of 6 dots (1s and 0s), which can then 
+be read by our machine to identify the corresponding character.
+
+## Purpose and Intent
+
+We aim to:
+- Enable visually unimpaired users to learn Braille using a mobile app or other devices.
+- Translate Braille into a binary grid (6 dots: 1s and 0s) for machine input.
+- Create a formal grammar that can be used in future projects, like an augmented reality (AR) app to scan and read Braille via a phone camera.
+
+Our broader goal is to promote empathy and communication with the visually impaired and encourage learning Braille as a valuable skill.
+
+## Language Structure
+
+- **Alphabet:** Covers the 26 letters of the English alphabet (no symbols or numbers for this version).
+- **Machine Process:** The machine reads 6-bit binary input and matches it to a dictionary of characters. If the input is invalid or doesn’t match, the machine rejects it.
+- **Smallest Valid Input:** The empty string (`λ`) doesn’t trigger the machine’s processing.
+
+### Key Features:
+- **Input Format:** Braille as 6-bit binary strings (1s and 0s).
+- **State Machine:** A deterministic finite automaton (DFA) matches input to characters in a dictionary.
+- **Invalid Input:** The machine rejects invalid input that doesn't match a character.
+
+## Purpose Beyond the Project
+
+- **Global Impact:** Over 250 million blind people worldwide (National Library of Medicine), yet few resources exist to help the sighted understand them.
+- **Empathy & Communication:** The machine is a tool to help the sighted empathize with the blind by learning Braille and understanding their experiences.
+  
+### Vision:
+- We aim to build an app that not only scans Braille but also teaches users how to read it through a progression-based learning system.
+- While similar ideas exist, our focus is on making learning Braille accessible and engaging for the sighted, rather than just providing a tool.
+
+## Overall:
+
+Our project is more than a machine—it’s a step toward fostering empathy, understanding, and communication between the sighted and the visually impaired. This language can lay the foundation for future 
+applications that improve accessibility.
+
+## Using the machine's Code
+
+## Running the Test Cases
