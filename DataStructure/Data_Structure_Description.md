@@ -22,7 +22,7 @@
 
 # Data Structure Text Representation Description
 
-Our data structure can also be represented as a file containing **96 lines**, where each line serves a specific purpose:  
+Our data structure can also be represented as a file (data_structure_text_representation.txt) containing **96 lines**, where each line serves a specific purpose:  
 
 1. **Line 1**: A whitespace-separated list of the states.  
 2. **Line 2**: A whitespace-separated list of input symbols.  
