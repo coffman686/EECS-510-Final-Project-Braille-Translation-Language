@@ -59,6 +59,12 @@ To utilize our language, English letters must be converted into binary strings o
 **Result**:  
 - `100000101000` → “ab”
 
-![image](https://github.com/user-attachments/assets/31042701-243a-4432-b4be-baa7d5d8add4)
+
 
 **Figure 1**
+
+
+
+![image](https://github.com/user-attachments/assets/31042701-243a-4432-b4be-baa7d5d8add4)
+
+
